@@ -1,0 +1,56 @@
+{
+  "S3_DATA_PATH": "APMS/data/",
+  "BUCKET_NAME": "apmsbirdlife",
+  "AWS_ACCESS_KEY": "[INSERT ACCESS KEY]",
+  "AWS_SECRET_ACCESS_KEY": "[INSERT SECRET ACCESS KEY]",
+  "SAMPLING_FREQ": 100,
+  "SCALE_OVERLOAD": 15,
+  "MAX_SCALES_DIFFERENCE_ALLOWED": 0.2,
+  "MAX_AVG_SAMPLING_PERIOD": 0.0101,
+  "MIN_AVG_SAMPLING_PERIOD": 0.0099,
+  "MAX_DEADWEIGHT_DIFF": 0.05,
+  "MAX_DEAD_WEIGHT": 2,
+  "PENGUIN_WALKING_PERIOD_MIN": 0.18,
+  "PENGUIN_WALKING_PERIOD_MAX": 0.4,
+  "MIN_PENGUIN_WEIGHT": 2.5,
+  "MAX_PENGUIN_WEIGHT": 4.7,
+  "MIN_TIME_BETWEEN_SUB_EVENTS": 0.3,
+  "MIN_DURATION_VALID_WEIGHT": 0.35,
+  "SCALE_FILE_ISOLATION_INTERVAL": 60,
+  "STD_DEV_STATIC": 0.015,
+  "STD_DEV_DYNAMIC": 0.5,
+  "STD_DEV_MAX": 0.8,
+  "TEST_TAGS": "999.000000007425",
+  "RFID_IGNORE_INTERVAL": 1200,
+  "RFID_ISOLATION_INTERVAL": 600,
+  "RFID_TO_PENGUIN_INTERVAL": 60,
+  "HOST_IP": "[INSERT IP OF HOST]",
+  "DOWNLOAD_ALL": true,
+  "DOWNLOAD_STATUS_FILES": true,
+  "DOWNLOAD_LOG_FILE": true,
+  "LOG_TO_INFLUX": true,
+  "STATUS_TO_INFLUX": true,
+  "PENGUINS_TO_INFLUX": true,
+  "SITES": [
+    {
+      "name": "stony_point",
+      "rfid_location": "middle_only",
+      "start_date": "20230603"
+    },
+    {
+      "name": "bird_island",
+      "rfid_location": "middle_only",
+      "start_date": "20230512"
+    },
+    {
+      "name": "dyer_island",
+      "rfid_location": "middle_only",
+      "start_date": "20230718"
+    },
+    {
+      "name": "robben_island",
+      "rfid_location": "middle_only",
+      "start_date": "20230801"
+    }
+  ]
+}
