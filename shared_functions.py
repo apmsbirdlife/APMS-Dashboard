@@ -171,7 +171,7 @@ def penguin_list_to_csv (penguin_list, csv_file_path, meta_data):
 
 	# Extract fieldnames from the first object in the list
 	# header = "# Site: {}	Total Number of Files: {}	Succesfully Processed: {} ({}%)".format(site, )
-	fieldnames = ['TIMESTAMP','ID','WEIGHT','WEIGHT_DIFFERENCE','DIRECTION']
+	fieldnames = ['TIMESTAMP','ID','WEIGHT','WEIGHT_DIFFERENCE','DIRECTION', 'SCALE_1_TYPE', 'SCALE_2_TYPE']
 
 	print('converting penguin list to csv file: {}'.format(csv_file_path))
 	
@@ -205,7 +205,9 @@ def penguin_list_to_csv (penguin_list, csv_file_path, meta_data):
 			'ID': penguin.id, 
 			'WEIGHT':penguin.weight_obj.weight,
 			'WEIGHT_DIFFERENCE':round(penguin.weight_obj.weight_difference,3),
-			'DIRECTION':penguin.direction}
+			'DIRECTION':penguin.direction,
+			'SCALE_1_TYPE': penguin.scale_1_type, # <--- NEW LINE
+			'SCALE_2_TYPE': penguin.scale_2_type} # <--- NEW LINE
 			
 			writer.writerow(temp_dict)
 ##############################################################################

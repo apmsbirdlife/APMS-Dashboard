@@ -269,6 +269,11 @@ def combine_penguin_lists(scale_1, scale_2):
 		weight_difference = penguin_weight_1 - penguin_weight_2
 		penguin.scales_difference = weight_difference
 		
+		# --- ADDED NEW LINES HERE ---
+		penguin.scale_1_type = penguin_list_1[i].weight_obj.weight_type
+		penguin.scale_2_type = penguin_list_2[i].weight_obj.weight_type
+		# ------------------------------
+
 		if weight_difference == 0:
 			print("Both scales read the same weight")
 
